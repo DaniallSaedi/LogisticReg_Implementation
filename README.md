@@ -24,9 +24,13 @@ This project is ideal for learning how binary classification works under the hoo
 LogisticReg_Implementation/
 
 │
+
 ├── logistic_reg.py
+
 │
+
 └── examples/
+
   └── test_logistic_reg.py
 
 ---
