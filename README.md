@@ -5,7 +5,7 @@ This project is ideal for learning how binary classification works under the hoo
 
 ---
 
-## 🚀 Features
+## Features
 
 - Sigmoid activation  
 - Binary cross‑entropy loss  
@@ -19,7 +19,7 @@ This project is ideal for learning how binary classification works under the hoo
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 LogisticReg_Implementation/
 │
@@ -30,51 +30,7 @@ LogisticReg_Implementation/
 
 ---
 
-## 🧠 How It Works
-
-### Sigmoid Function
-
-
-
-\[
-\sigma(z) = \frac{1}{1 + e^{-z}}
-\]
-
-
-
-### Binary Cross‑Entropy Loss
-
-
-
-\[
-J(\theta) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y)\log(1 - \hat{y}) \right]
-\]
-
-
-
-### Gradient Descent Update
-
-
-
-\[
-\theta := \theta - \alpha \cdot \frac{1}{m} X^T(\hat{y} - y)
-\]
-
-
-
-With L2 regularization:
-
-
-
-\[
-\theta_j := \theta_j - \alpha \left( \frac{1}{m} X^T(\hat{y} - y) + \frac{\lambda}{m}\theta_j \right)
-\]
-
-
-
----
-
-## 🧪 Example Usage
+## Example Usage
 
 ```python
 from LogisticReg_Implementation.logistic_reg import LogisticReg
@@ -90,7 +46,7 @@ model.fit(X, y, alpha=0.01, max_iter=2000, scale=True)
 print("Predictions:", model.predict(X))
 print("Probabilities:", model.predict_proba(X))
 print("First 5 losses:", model.loss_history[:5])
-
+```
 ---
 
 ## Parameters
@@ -110,16 +66,5 @@ If you want to import it like a package:
 
 ---
 
-## ▶️ How to Run the Example
+## How to Run the Example
 python -m LogisticReg_Implementation.examples.test_logistic_reg
-
----
-
-If you want, I can also generate:
-
-- a combined README for both Linear & Logistic Regression  
-- a comparison table  
-- a math‑heavy version with derivations  
-- a more aesthetic README with badges and visuals  
-
-Just tell me what style you want.
